@@ -1,0 +1,27 @@
+name: Material
+version: 0.1.0
+description: Material Design
+icon: rebel
+author:
+  name: Tyler Woods
+  email: tyler@tylermade.net
+homepage: https://github.com/tyler-woods/grav-theme-material
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/tyler-woods/grav-theme-mdux/issues
+readme: https://github.com/tyler-woods/grav-theme-mdux/blob/develop/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool
